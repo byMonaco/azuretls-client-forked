@@ -1,4 +1,4 @@
-module github.com/Noooste/azuretls-client
+module github.com/byMonaco/azuretls-client-forked
 
 go 1.24.0
 
