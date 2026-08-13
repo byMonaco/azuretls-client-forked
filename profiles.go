@@ -40,7 +40,7 @@ func (s *Session) GetBrowserHTTP3ClientHelloFunc(browser string) func() *tls.Cli
 }
 
 // GetLastChromeVersion apply the latest Chrome version
-// Current Chrome version : 133
+// Current Chrome version : 151
 func GetLastChromeVersion() *tls.ClientHelloSpec {
 	return &tls.ClientHelloSpec{
 		CipherSuites: []uint16{
@@ -239,7 +239,6 @@ func GetLastChromeVersionForHTTP3() *tls.ClientHelloSpec {
 		}),
 	}
 }
-
 func GetLastIosVersion() *tls.ClientHelloSpec {
 	return &tls.ClientHelloSpec{
 		TLSVersMin: tls.VersionTLS10,
@@ -352,7 +351,6 @@ func GetLastIosVersion() *tls.ClientHelloSpec {
 		},
 	}
 }
-
 func GetLastSafariVersion() *tls.ClientHelloSpec {
 	return &tls.ClientHelloSpec{
 		CipherSuites: []uint16{
