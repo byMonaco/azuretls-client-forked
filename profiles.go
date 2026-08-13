@@ -79,6 +79,10 @@ func GetLastChromeVersion() *tls.ClientHelloSpec {
 			}},
 			&tls.SNIExtension{},
 			&tls.SignatureAlgorithmsExtension{SupportedSignatureAlgorithms: []tls.SignatureScheme{
+				tls.SignatureScheme(0x0904), // ML-DSA-44
+				tls.SignatureScheme(0x0905), // ML-DSA-65
+				tls.SignatureScheme(0x0906), // ML-DSA-87
+
 				tls.ECDSAWithP256AndSHA256,
 				tls.PSSWithSHA256,
 				tls.PKCS1WithSHA256,
